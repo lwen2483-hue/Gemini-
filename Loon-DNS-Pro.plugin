@@ -1,61 +1,43 @@
-#!name=DNS 防污染优化
-#!desc=阿里 / 腾讯 / 抖音 / Apple / 国外 DNS 自动分流优化
+#!name=DNS 防污染优化 Pro
+#!desc=国内国外自动分流 / ChatGPT / 抖音 / Apple / GitHub 优化
 #!author=ChatGPT
-#!homepage=https://github.com
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
-
-[DNS]
-ipv6 = false
-prefer-doh3 = true
-enhanced-mode = fake-ip
-
-dns-server = \
-https://dns.alidns.com/dns-query, \
-https://doh.pub/dns-query, \
-https://doh.dns.apple.com/dns-query, \
-https://cloudflare-dns.com/dns-query, \
-https://dns.google/dns-query
-
-fallback-dns-server = \
-https://cloudflare-dns.com/dns-query, \
-https://dns.google/dns-query
-
-fake-ip-filter = \
-*.lan, \
-*.local, \
-localhost, \
-time.apple.com, \
-time-ios.apple.com, \
-push.apple.com, \
-router.asus.com, \
-routerlogin.net, \
-miwifi.com
-
-host = localhost,127.0.0.1
 
 [Rule]
 
-# ===== Apple =====
+# =========================
+# Apple
+# =========================
 
 DOMAIN-SUFFIX,apple.com,DIRECT
 DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,mzstatic.com,DIRECT
 DOMAIN-SUFFIX,me.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,push.apple.com,DIRECT
+DOMAIN-SUFFIX,apple-dns.net,DIRECT
 
-# ===== 阿里 =====
+# =========================
+# 阿里系
+# =========================
 
 DOMAIN-SUFFIX,alibaba.com,DIRECT
 DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
 DOMAIN-SUFFIX,taobao.com,DIRECT
 DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,tmall.hk,DIRECT
 DOMAIN-SUFFIX,aliyun.com,DIRECT
 DOMAIN-SUFFIX,aliyuncs.com,DIRECT
 DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,alicdn.com,DIRECT
 DOMAIN-SUFFIX,aliyundrive.com,DIRECT
 DOMAIN-SUFFIX,antgroup.com,DIRECT
+DOMAIN-SUFFIX,amap.com,DIRECT
+DOMAIN-SUFFIX,tb.cn,DIRECT
 
-# ===== 腾讯 =====
+# =========================
+# 腾讯系
+# =========================
 
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
@@ -67,8 +49,11 @@ DOMAIN-SUFFIX,gtimg.cn,DIRECT
 DOMAIN-SUFFIX,idqqimg.com,DIRECT
 DOMAIN-SUFFIX,myqcloud.com,DIRECT
 DOMAIN-SUFFIX,servicewechat.com,DIRECT
+DOMAIN-SUFFIX,url.cn,DIRECT
 
-# ===== 字节 =====
+# =========================
+# 字节 / 抖音
+# =========================
 
 DOMAIN-SUFFIX,douyin.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
@@ -76,61 +61,159 @@ DOMAIN-SUFFIX,douyinpic.com,DIRECT
 DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,snssdk.com,DIRECT
-DOMAIN-SUFFIX,toutiao.com,DIRECT
-DOMAIN-SUFFIX,ixigua.com,DIRECT
 DOMAIN-SUFFIX,pstatp.com,DIRECT
+DOMAIN-SUFFIX,ixigua.com,DIRECT
+DOMAIN-SUFFIX,toutiao.com,DIRECT
+DOMAIN-SUFFIX,toutiaocdn.com,DIRECT
 DOMAIN-SUFFIX,bytedance.com,DIRECT
 DOMAIN-SUFFIX,byteoversea.com,DIRECT
 DOMAIN-SUFFIX,ibytedtos.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
 
-# ===== 国内 =====
+# =========================
+# 哔哩哔哩
+# =========================
 
-DOMAIN-SUFFIX,cn,DIRECT
-DOMAIN-SUFFIX,baidu.com,DIRECT
-DOMAIN-SUFFIX,bdstatic.com,DIRECT
 DOMAIN-SUFFIX,bilibili.com,DIRECT
 DOMAIN-SUFFIX,bilivideo.com,DIRECT
-DOMAIN-SUFFIX,jd.com,DIRECT
-DOMAIN-SUFFIX,163.com,DIRECT
-DOMAIN-SUFFIX,zhihu.com,DIRECT
-DOMAIN-SUFFIX,sina.com,DIRECT
+DOMAIN-SUFFIX,biliapi.com,DIRECT
 
-# ===== OpenAI =====
+# =========================
+# 百度
+# =========================
+
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,bdstatic.com,DIRECT
+DOMAIN-SUFFIX,bdimg.com,DIRECT
+
+# =========================
+# 京东
+# =========================
+
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,jd.hk,DIRECT
+DOMAIN-SUFFIX,jcloud.com,DIRECT
+
+# =========================
+# 网易
+# =========================
+
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,126.net,DIRECT
+DOMAIN-SUFFIX,netease.com,DIRECT
+
+# =========================
+# 新浪 / 微博
+# =========================
+
+DOMAIN-SUFFIX,sina.com,DIRECT
+DOMAIN-SUFFIX,weibo.com,DIRECT
+
+# =========================
+# 国内默认
+# =========================
+
+DOMAIN-SUFFIX,cn,DIRECT
+
+# =========================
+# OpenAI
+# =========================
 
 DOMAIN-SUFFIX,openai.com,PROXY
 DOMAIN-SUFFIX,chatgpt.com,PROXY
 DOMAIN-SUFFIX,auth0.com,PROXY
+DOMAIN-SUFFIX,oaistatic.com,PROXY
 
-# ===== Google =====
+# =========================
+# Google
+# =========================
 
 DOMAIN-SUFFIX,google.com,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
 DOMAIN-SUFFIX,gstatic.com,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
 DOMAIN-SUFFIX,youtube.com,PROXY
 DOMAIN-SUFFIX,ytimg.com,PROXY
-DOMAIN-SUFFIX,googlevideo.com,PROXY
+DOMAIN-SUFFIX,gvt1.com,PROXY
 
-# ===== GitHub =====
+# =========================
+# GitHub
+# =========================
 
 DOMAIN-SUFFIX,github.com,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,PROXY
+DOMAIN-SUFFIX,githubassets.com,PROXY
 
-# ===== Telegram =====
+# =========================
+# Telegram
+# =========================
 
 DOMAIN-SUFFIX,telegram.org,PROXY
 DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-SUFFIX,telegra.ph,PROXY
 
-# ===== Twitter/X =====
+# =========================
+# Twitter / X
+# =========================
 
 DOMAIN-SUFFIX,twitter.com,PROXY
 DOMAIN-SUFFIX,x.com,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
 
-# ===== Cloudflare =====
+# =========================
+# Cloudflare
+# =========================
 
 DOMAIN-SUFFIX,cloudflare.com,PROXY
 DOMAIN-SUFFIX,workers.dev,PROXY
 DOMAIN-SUFFIX,pages.dev,PROXY
 
-# ===== 默认 =====
+# =========================
+# Netflix
+# =========================
+
+DOMAIN-SUFFIX,netflix.com,PROXY
+DOMAIN-SUFFIX,netflix.net,PROXY
+DOMAIN-SUFFIX,nflxvideo.net,PROXY
+
+# =========================
+# Spotify
+# =========================
+
+DOMAIN-SUFFIX,spotify.com,PROXY
+DOMAIN-SUFFIX,scdn.co,PROXY
+
+# =========================
+# TikTok 国际版
+# =========================
+
+DOMAIN-SUFFIX,tiktok.com,PROXY
+DOMAIN-SUFFIX,tiktokv.com,PROXY
+DOMAIN-SUFFIX,tiktokcdn.com,PROXY
+DOMAIN-SUFFIX,muscdn.com,PROXY
+
+# =========================
+# AI
+# =========================
+
+DOMAIN-SUFFIX,claude.ai,PROXY
+DOMAIN-SUFFIX,anthropic.com,PROXY
+DOMAIN-SUFFIX,perplexity.ai,PROXY
+DOMAIN-SUFFIX,grok.com,PROXY
+
+# =========================
+# 局域网
+# =========================
+
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+DOMAIN-SUFFIX,home,DIRECT
+DOMAIN-SUFFIX,router.asus.com,DIRECT
+DOMAIN-SUFFIX,routerlogin.net,DIRECT
+DOMAIN-SUFFIX,miwifi.com,DIRECT
+
+# =========================
+# 最终规则
+# =========================
 
 FINAL,PROXY
