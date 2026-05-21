@@ -1,0 +1,136 @@
+#!name=DNS 防污染优化
+#!desc=阿里 / 腾讯 / 抖音 / Apple / 国外 DNS 自动分流优化
+#!author=ChatGPT
+#!homepage=https://github.com
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+
+[DNS]
+ipv6 = false
+prefer-doh3 = true
+enhanced-mode = fake-ip
+
+dns-server = \
+https://dns.alidns.com/dns-query, \
+https://doh.pub/dns-query, \
+https://doh.dns.apple.com/dns-query, \
+https://cloudflare-dns.com/dns-query, \
+https://dns.google/dns-query
+
+fallback-dns-server = \
+https://cloudflare-dns.com/dns-query, \
+https://dns.google/dns-query
+
+fake-ip-filter = \
+*.lan, \
+*.local, \
+localhost, \
+time.apple.com, \
+time-ios.apple.com, \
+push.apple.com, \
+router.asus.com, \
+routerlogin.net, \
+miwifi.com
+
+host = localhost,127.0.0.1
+
+[Rule]
+
+# ===== Apple =====
+
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+DOMAIN-SUFFIX,me.com,DIRECT
+
+# ===== 阿里 =====
+
+DOMAIN-SUFFIX,alibaba.com,DIRECT
+DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,aliyun.com,DIRECT
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,alicdn.com,DIRECT
+DOMAIN-SUFFIX,aliyundrive.com,DIRECT
+DOMAIN-SUFFIX,antgroup.com,DIRECT
+
+# ===== 腾讯 =====
+
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,weixin.com,DIRECT
+DOMAIN-SUFFIX,tencent.com,DIRECT
+DOMAIN-SUFFIX,qcloud.com,DIRECT
+DOMAIN-SUFFIX,gtimg.com,DIRECT
+DOMAIN-SUFFIX,gtimg.cn,DIRECT
+DOMAIN-SUFFIX,idqqimg.com,DIRECT
+DOMAIN-SUFFIX,myqcloud.com,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+
+# ===== 字节 =====
+
+DOMAIN-SUFFIX,douyin.com,DIRECT
+DOMAIN-SUFFIX,douyinvod.com,DIRECT
+DOMAIN-SUFFIX,douyinpic.com,DIRECT
+DOMAIN-SUFFIX,amemv.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
+DOMAIN-SUFFIX,snssdk.com,DIRECT
+DOMAIN-SUFFIX,toutiao.com,DIRECT
+DOMAIN-SUFFIX,ixigua.com,DIRECT
+DOMAIN-SUFFIX,pstatp.com,DIRECT
+DOMAIN-SUFFIX,bytedance.com,DIRECT
+DOMAIN-SUFFIX,byteoversea.com,DIRECT
+DOMAIN-SUFFIX,ibytedtos.com,DIRECT
+
+# ===== 国内 =====
+
+DOMAIN-SUFFIX,cn,DIRECT
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,bdstatic.com,DIRECT
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,sina.com,DIRECT
+
+# ===== OpenAI =====
+
+DOMAIN-SUFFIX,openai.com,PROXY
+DOMAIN-SUFFIX,chatgpt.com,PROXY
+DOMAIN-SUFFIX,auth0.com,PROXY
+
+# ===== Google =====
+
+DOMAIN-SUFFIX,google.com,PROXY
+DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN-SUFFIX,gstatic.com,PROXY
+DOMAIN-SUFFIX,youtube.com,PROXY
+DOMAIN-SUFFIX,ytimg.com,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+
+# ===== GitHub =====
+
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+
+# ===== Telegram =====
+
+DOMAIN-SUFFIX,telegram.org,PROXY
+DOMAIN-SUFFIX,t.me,PROXY
+
+# ===== Twitter/X =====
+
+DOMAIN-SUFFIX,twitter.com,PROXY
+DOMAIN-SUFFIX,x.com,PROXY
+
+# ===== Cloudflare =====
+
+DOMAIN-SUFFIX,cloudflare.com,PROXY
+DOMAIN-SUFFIX,workers.dev,PROXY
+DOMAIN-SUFFIX,pages.dev,PROXY
+
+# ===== 默认 =====
+
+FINAL,PROXY
