@@ -1,0 +1,129 @@
+# =========================
+# OpenAI（稳定核心）
+# =========================
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiapi.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,cdn.oaistatic.com
+
+# OpenAI API 稳定链路
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,files.oaiusercontent.com
+
+# =========================
+# Claude（Anthropic 稳定核心）
+# =========================
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,api.anthropic.com
+DOMAIN-SUFFIX,console.anthropic.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,anthropicusercontent.com
+
+# =========================
+# Google Gemini（稳定必备）
+# =========================
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,vertexai.googleapis.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+
+# ⚠️ Gemini 稳定关键（避免抽风）
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+
+# =========================
+# Microsoft Copilot
+# =========================
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+
+# =========================
+# GitHub Copilot（开发稳定）
+# =========================
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,api.githubcopilot.com
+DOMAIN-SUFFIX,copilot.githubusercontent.com
+DOMAIN-SUFFIX,githubusercontent.com
+
+# =========================
+# Perplexity（搜索AI）
+# =========================
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,api.perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+
+# =========================
+# xAI / Grok
+# =========================
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,api.x.ai
+
+# =========================
+# Cursor（AI IDE稳定关键）
+# =========================
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,api.cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+
+# =========================
+# Windsurf / Codeium
+# =========================
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,api.codeium.com
+
+# =========================
+# OpenRouter / AI API 聚合
+# =========================
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,api.openrouter.ai
+
+# =========================
+# AI 模型平台（稳定开发）
+# =========================
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,fireworks.ai
+DOMAIN-SUFFIX,cerebras.ai
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,huggingface.co
+
+# =========================
+# AI 图像 / 视频（稳定版）
+# =========================
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,runwayml.com
+
+# =========================
+# AI 语音 / 音频
+# =========================
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabs.com
+
+# =========================
+# AI 搜索 / 助手（稳定）
+# =========================
+DOMAIN-SUFFIX,phind.com
+DOMAIN-SUFFIX,you.com
+DOMAIN-SUFFIX,poe.com
+
+# =========================
+# ⚠️ 关键稳定补丁（防异常）
+# =========================
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,turnstile.cloudflare.com
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,fastly.net
