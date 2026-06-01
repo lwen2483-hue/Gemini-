@@ -1,25 +1,20 @@
-#!name=蛋蛋不语VIP解锁
-#!desc=解锁蛋蛋不语VIP会员功能
-#!author=Curtinp118
-#!homepage=https://github.com/curtinp118/Loon
+#!name=蛋蛋不语VIP解锁(修复DNS泄露版)
+#!desc=解锁蛋蛋不语VIP会员功能，修复原版导致公共DNS泄露的问题
+#!author=Curtinp118 (Modified)
 
 [Rule]
-# 蛋蛋不语（加上 no-resolve 防止本地 DNS 泄露）
-DOMAIN-SUFFIX,one.one.one.one,no-resolve
+# 只保留核心业务域名和纯IP分流，剔除 one.one.one.one 等公共DNS和检测域名
 DOMAIN-SUFFIX,api.wwzy.tv,no-resolve
 DOMAIN-SUFFIX,bfzyapi.com,no-resolve
 DOMAIN-SUFFIX,img.picbf.com,no-resolve
 DOMAIN-SUFFIX,v10.baofeng10.com,no-resolve
-DOMAIN-SUFFIX,icanhazip.com,no-resolve
-DOMAIN-SUFFIX,captive.apple.com,no-resolve
-DOMAIN-SUFFIX,ajax.googleapis.com,no-resolve
 DOMAIN-SUFFIX,s1.fengbao9.com,no-resolve
-DOMAIN-SUFFIX,develop202.github.io,no-resolve
 DOMAIN-SUFFIX,s2.bfllvip.com,no-resolve
-# IP 规则本身不需要且不支持 no-resolve，保持原样即可
+# 核心服务器 IP 直连或走特定策略
 IP-CIDR,38.76.202.248/32
 
 [Script]
+# 拦截硬编码 IP 的请求并执行本地重写
 http-response ^http:\/\/38\.76\.202\.248:8000\/.*profiles.* script-path=https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/dandanvip/dandanvip_unlock.js, requires-body=true, timeout=10, tag=蛋蛋不语VIP解锁, enable=true
 
 [MITM]
