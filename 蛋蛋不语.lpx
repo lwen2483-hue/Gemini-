@@ -4,22 +4,23 @@
 #!homepage=https://github.com/curtinp118/Loon
 
 [Rule]
-# 蛋蛋不语
-DOMAIN-SUFFIX,one.one.one.one
-DOMAIN-SUFFIX,api.wwzy.tv
-DOMAIN-SUFFIX,bfzyapi.com
-DOMAIN-SUFFIX,img.picbf.com
-DOMAIN-SUFFIX,v10.baofeng10.com
-DOMAIN-SUFFIX,icanhazip.com
-DOMAIN-SUFFIX,captive.apple.com
-DOMAIN-SUFFIX,ajax.googleapis.com
-DOMAIN-SUFFIX,s1.fengbao9.com
-DOMAIN-SUFFIX,develop202.github.io
-DOMAIN-SUFFIX,s2.bfllvip.com
-IP-CIDR,38.76.202.248/32,no-resolve
+# 蛋蛋不语（加上 no-resolve 防止本地 DNS 泄露）
+DOMAIN-SUFFIX,one.one.one.one,no-resolve
+DOMAIN-SUFFIX,api.wwzy.tv,no-resolve
+DOMAIN-SUFFIX,bfzyapi.com,no-resolve
+DOMAIN-SUFFIX,img.picbf.com,no-resolve
+DOMAIN-SUFFIX,v10.baofeng10.com,no-resolve
+DOMAIN-SUFFIX,icanhazip.com,no-resolve
+DOMAIN-SUFFIX,captive.apple.com,no-resolve
+DOMAIN-SUFFIX,ajax.googleapis.com,no-resolve
+DOMAIN-SUFFIX,s1.fengbao9.com,no-resolve
+DOMAIN-SUFFIX,develop202.github.io,no-resolve
+DOMAIN-SUFFIX,s2.bfllvip.com,no-resolve
+# IP 规则本身不需要且不支持 no-resolve，保持原样即可
+IP-CIDR,38.76.202.248/32
 
 [Script]
 http-response ^http:\/\/38\.76\.202\.248:8000\/.*profiles.* script-path=https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/dandanvip/dandanvip_unlock.js, requires-body=true, timeout=10, tag=蛋蛋不语VIP解锁, enable=true
 
 [MITM]
-hostname = 38.76.202.248,no-resolve
+hostname = 38.76.202.248
