@@ -54,6 +54,7 @@ DOMAIN-SUFFIX,v95-aw-cold.douyinvod.com
 DOMAIN-SUFFIX,v95-hzyy-thr-daily-colda.douyinvod.com
 DOMAIN-SUFFIX,v95-ynkmtc-cold.douyinvod.com
 DOMAIN-SUFFIX,vcs.zijieapi.com
+DOMAIN-SUFFIX, huoshanimg.com
 IP-CIDR,101.36.166.16/32,no-resolve
 IP-CIDR,101.36.166.17/32,no-resolve
 IP-CIDR,101.36.166.18/32,no-resolve
