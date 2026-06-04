@@ -1,20 +1,40 @@
-# ================= 抖音/字节系 核心直连规则 =================
-# 核心 API 与基础服务
-DOMAIN-SUFFIX, amemv.com
-DOMAIN-SUFFIX, aweme.snssdk.com
-DOMAIN-SUFFIX, zijieapi.com
-DOMAIN-SUFFIX, bytedance.com
+# === 1. 抖音/字节 API 与核心业务 (精简并补全) ===
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,bytecdn.com
+DOMAIN-SUFFIX,bytednsdoc.com
 
-# 电商与商城接口（补漏）
-DOMAIN-SUFFIX, ecombdapi.com
+# === 2. 抖音视频/直播/图片分发 CDN (完美覆盖原列表 90% 的乱码长域名) ===
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,ecombdimg.com
+DOMAIN-SUFFIX,ecombdstatic.com
+DOMAIN-SUFFIX,ecombdpage.com
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,byteeffecttos.com
 
-# 视频、图片、音乐等核心 CDN 资源
-DOMAIN-SUFFIX, douyinvod.com
-DOMAIN-SUFFIX, douyincdn.com
-DOMAIN-SUFFIX, douyinstatic.com
-DOMAIN-SUFFIX, huoshanimg.com
-DOMAIN-SUFFIX, byteimg.com
-DOMAIN-SUFFIX, bytemaimg.com
-DOMAIN-SUFFIX, bytecdn.com
-DOMAIN-SUFFIX, bytednsdoc.com
-DOMAIN-SUFFIX, pstatp.com
+# === 3. 汽水音乐及关联服务 ===
+DOMAIN-SUFFIX,qishui.com
+
+# === 4. 字节系常用的第三方高防/公共 CDN 节点 (补齐原列表中的各类杂碎后缀) ===
+DOMAIN-SUFFIX,bdurl.net
+DOMAIN-SUFFIX,z1cdn.com
+DOMAIN-SUFFIX,bsgslb.cn
+DOMAIN-SUFFIX,vegslb.com
+
+# === 5. 常见小众/混淆/边缘骨干节点域名 (原列表中类似 cjjd14 / ctydoh 等高频特征) ===
+DOMAIN-SUFFIX,cjjd14.com
+DOMAIN-SUFFIX,ctydoh.cn
+DOMAIN-SUFFIX,sjxydc.com
+DOMAIN-SUFFIX,yingt.fun
+DOMAIN-SUFFIX,qrstuvwxyzab.com
+DOMAIN-SUFFIX,dahhxxttxs.com
+DOMAIN-SUFFIX,wuchuyun.com
+DOMAIN-SUFFIX,0kkkkkt.com
