@@ -3,8 +3,13 @@
 #!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Xair.png
 
 [Rule]
+# ===== 0. 强制优先级（最高，必须放在最前） =====
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,douyinvod.com,DIRECT
+DOMAIN-SUFFIX,douyinvod.com,DIRECT
+DOMAIN,js.appds.vip,漏网之鱼
+
 # ===== 1. 核心本地/审计与阻断（高优先级） =====
-DOMAIN,sub-store.box,DIRECT
 IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
 DOMAIN,msmp.abchina.com.cn,REJECT
 
@@ -21,6 +26,8 @@ DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,icloud-content.com,DIRECT
 DOMAIN-SUFFIX,cdn-apple.com,DIRECT
 DOMAIN-SUFFIX,apple-dns.net,DIRECT
+DOMAIN-SUFFIX,token.safebrowsing.apple,DIRECT
+
 
 # ===== 3. IPv4 保留 / 内网 / 特殊地址直连 =====
 IP-CIDR,0.0.0.0/8,DIRECT,no-resolve
@@ -52,6 +59,3 @@ DOMAIN-SUFFIX,cn,DIRECT
 DOMAIN-SUFFIX,speedtest.cn,DIRECT
 
 # ===== 6. 特定域名走代理 =====
-DOMAIN,js.appds.vip,美国节点
-
-# ===== 7. 兜底国内 IP 直连 =====
