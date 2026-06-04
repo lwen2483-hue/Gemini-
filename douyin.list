@@ -141,3 +141,12 @@ IP-CIDR,58.251.126.234/32,no-resolve
 IP-CIDR,58.251.126.235/32,no-resolve
 IP-CIDR,59.44.165.126/32,no-resolve
 IP-CIDR,8.134.241.67/32,no-resolve
+# 安全的国内抖音补漏规则（100%不影响 TikTok）
+DOMAIN-SUFFIX, ecombdapi.com
+DOMAIN-SUFFIX, bytedance.com
+DOMAIN-SUFFIX, zijieapi.com
+DOMAIN-SUFFIX, byteimg.com
+DOMAIN-SUFFIX, bytemaimg.com
+DOMAIN-SUFFIX, bytecdn.com
+DOMAIN-SUFFIX, bytednsdoc.com
+DOMAIN-SUFFIX, pstatp.com
