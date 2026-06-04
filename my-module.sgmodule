@@ -27,7 +27,7 @@ DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-SUFFIX,icloud-content.com,DIRECT
 DOMAIN-SUFFIX,cdn-apple.com,DIRECT
 DOMAIN-SUFFIX,apple-dns.net,DIRECT
-DOMAIN-SUFFIX,token.safebrowsing.apple,DIRECT
+DOMAIN-SUFFIX,token.safebrowsing.apple,REJECT,no-resolve
 
 
 # ===== 3. IPv4 保留 / 内网 / 特殊地址直连 =====
