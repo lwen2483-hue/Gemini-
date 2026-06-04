@@ -25,128 +25,21 @@ DOMAIN-SUFFIX,szreport.weixin.qq.com
 DOMAIN-SUFFIX,szshort.weixin.qq.com
 DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,wxpaylogo.qpic.cn
-IP-CIDR,10.74.110.88/32,no-resolve
-IP-CIDR,100.108.175.255/32,no-resolve
-IP-CIDR,101.67.0.117/32,no-resolve
-IP-CIDR,101.67.0.52/32,no-resolve
-IP-CIDR,101.67.0.56/32,no-resolve
-IP-CIDR,101.67.0.64/32,no-resolve
-IP-CIDR,110.72.98.117/32,no-resolve
-IP-CIDR,110.72.98.126/32,no-resolve
-IP-CIDR,110.72.98.129/32,no-resolve
-IP-CIDR,110.72.98.130/32,no-resolve
-IP-CIDR,110.72.98.132/32,no-resolve
-IP-CIDR,110.72.98.133/32,no-resolve
-IP-CIDR,110.72.98.93/32,no-resolve
-IP-CIDR,111.206.147.156/32,no-resolve
-IP-CIDR,111.206.147.210/32,no-resolve
-IP-CIDR,111.206.148.27/32,no-resolve
-IP-CIDR,111.23.14.31/32,no-resolve
-IP-CIDR,111.57.120.70/32,no-resolve
-IP-CIDR,111.57.120.71/32,no-resolve
-IP-CIDR,112.111.12.201/32,no-resolve
-IP-CIDR,116.130.224.150/32,no-resolve
-IP-CIDR,116.162.166.39/32,no-resolve
-IP-CIDR,116.162.38.18/32,no-resolve
-IP-CIDR,116.162.38.99/32,no-resolve
-IP-CIDR,116.196.129.4/32,no-resolve
-IP-CIDR,116.207.136.18/32,no-resolve
-IP-CIDR,117.129.55.141/32,no-resolve
-IP-CIDR,121.51.29.194/32,no-resolve
-IP-CIDR,121.51.29.198/32,no-resolve
-IP-CIDR,121.51.30.164/32,no-resolve
-IP-CIDR,121.51.30.165/32,no-resolve
-IP-CIDR,123.168.236.12/32,no-resolve
-IP-CIDR,123.184.30.36/32,no-resolve
-IP-CIDR,123.6.176.53/32,no-resolve
-IP-CIDR,125.39.94.4/32,no-resolve
-IP-CIDR,150.139.224.157/32,no-resolve
-IP-CIDR,153.3.235.17/32,no-resolve
-IP-CIDR,153.3.235.19/32,no-resolve
-IP-CIDR,153.3.235.78/32,no-resolve
-IP-CIDR,157.148.36.22/32,no-resolve
-IP-CIDR,157.148.48.223/32,no-resolve
-IP-CIDR,157.148.48.225/32,no-resolve
-IP-CIDR,157.148.59.148/32,no-resolve
-IP-CIDR,157.148.59.238/32,no-resolve
-IP-CIDR,157.148.61.140/32,no-resolve
-IP-CIDR,157.148.61.213/32,no-resolve
-IP-CIDR,157.148.61.231/32,no-resolve
-IP-CIDR,157.148.61.240/32,no-resolve
-IP-CIDR,157.148.62.140/32,no-resolve
-IP-CIDR,157.148.62.186/32,no-resolve
-IP-CIDR,157.148.62.201/32,no-resolve
-IP-CIDR,157.148.62.239/32,no-resolve
-IP-CIDR,157.255.191.46/32,no-resolve
-IP-CIDR,157.255.191.75/32,no-resolve
-IP-CIDR,157.255.191.88/32,no-resolve
-IP-CIDR,157.255.191.89/32,no-resolve
-IP-CIDR,157.255.203.110/32,no-resolve
-IP-CIDR,157.255.203.32/32,no-resolve
-IP-CIDR,157.255.209.167/32,no-resolve
-IP-CIDR,157.255.209.219/32,no-resolve
-IP-CIDR,157.255.209.247/32,no-resolve
-IP-CIDR,157.255.209.248/32,no-resolve
-IP-CIDR,172.18.0.1/32,no-resolve
-IP-CIDR,172.18.0.2/32,no-resolve
-IP-CIDR,180.153.201.124/32,no-resolve
-IP-CIDR,183.224.58.246/32,no-resolve
-IP-CIDR,183.241.148.244/32,no-resolve
-IP-CIDR,183.47.121.90/32,no-resolve
-IP-CIDR,183.47.122.25/32,no-resolve
-IP-CIDR,198.18.0.19/32,no-resolve
-IP-CIDR,198.18.0.21/32,no-resolve
-IP-CIDR,2000::/32,no-resolve
-IP-CIDR,211.97.81.43/32,no-resolve
-IP-CIDR,220.196.154.84/32,no-resolve
-IP-CIDR,220.200.137.14/32,no-resolve
-IP-CIDR,220.200.137.16/32,no-resolve
-IP-CIDR,220.200.137.22/32,no-resolve
-IP-CIDR,220.200.137.23/32,no-resolve
-IP-CIDR,220.200.137.24/32,no-resolve
-IP-CIDR,220.200.137.26/32,no-resolve
-IP-CIDR,220.200.137.30/32,no-resolve
-IP-CIDR,220.200.137.32/32,no-resolve
-IP-CIDR,220.200.137.33/32,no-resolve
-IP-CIDR,220.200.137.67/32,no-resolve
-IP-CIDR,220.200.137.68/32,no-resolve
-IP-CIDR,220.200.137.69/32,no-resolve
-IP-CIDR,223.83.240.246/32,no-resolve
-IP-CIDR,2408:8748:a100:41::26/32,no-resolve
-IP-CIDR,2408:8756:3af0:2042::e/32,no-resolve
-IP-CIDR,2408:8756:3af0:2043::7/32,no-resolve
-IP-CIDR,2408:8756:3af0:2044::3/32,no-resolve
-IP-CIDR,2408:8756:3af0:3006::1c/32,no-resolve
-IP-CIDR,2408:8756:3af0:3009::124/32,no-resolve
-IP-CIDR,2408:8756:3af0:300c::13/32,no-resolve
-IP-CIDR,2408:8756:3af0:300d::a/32,no-resolve
-IP-CIDR,2408:8756:3af0:5000::14/32,no-resolve
-IP-CIDR,2408:8756:3af0:5000::16/32,no-resolve
-IP-CIDR,2408:8756:3af0:5002::2c/32,no-resolve
-IP-CIDR,2408:8756:3af0:5004::12/32,no-resolve
-IP-CIDR,2408:8756:3af0:5005::6/32,no-resolve
-IP-CIDR,2408:8756:f50:1003::b/32,no-resolve
-IP-CIDR,2408:8756:f50:1004::2d/32,no-resolve
-IP-CIDR,2408:8756:f50:1006::12/32,no-resolve
-IP-CIDR,2408:8756:f50:100b::30/32,no-resolve
-IP-CIDR,2408:8756:f50:3046::29/32,no-resolve
-IP-CIDR,2408:8756:f50:3047::25/32,no-resolve
-IP-CIDR,2408:8756:f50:3051::1e/32,no-resolve
-IP-CIDR,2408:8756:f50:4001::1a/32,no-resolve
-IP-CIDR,2408:875c:6000:206:2c::/32,no-resolve
-IP-CIDR,2408:875c:6000:206:2d::/32,no-resolve
-IP-CIDR,2408:875c:6000:206:2f::/32,no-resolve
-IP-CIDR,2408:875c:6000:206:31::/32,no-resolve
-IP-CIDR,2408:875c:6000:206:35::/32,no-resolve
-IP-CIDR,2408:8766:0:1012:2c::/32,no-resolve
-IP-CIDR,2408:8766:0:1013:32::/32,no-resolve
-IP-CIDR,36.97.228.18/32,no-resolve
-IP-CIDR,43.159.235.61/32,no-resolve
-IP-CIDR,58.22.54.30/32,no-resolve
-IP-CIDR,58.222.38.11/32,no-resolve
-IP-CIDR,58.222.42.12/32,no-resolve
-IP-CIDR,58.251.120.145/32,no-resolve
-IP-CIDR,58.251.120.149/32,no-resolve
-IP-CIDR,61.241.45.159/32,no-resolve
-IP-CIDR,61.241.55.218/32,no-resolve
-IP-CIDR,61.241.56.14/32,no-resolve
+# 微信/wechat 核心通信与网页
+DOMAIN-SUFFIX, weixin.qq.com
+DOMAIN-SUFFIX, weixin.com
+DOMAIN-SUFFIX, wechat.com
+DOMAIN-SUFFIX, wechatlegal.net
+
+# 微信朋友圈、聊天图片、微信支付、公众号静态资源 CDN
+DOMAIN-SUFFIX, qpic.cn
+DOMAIN-SUFFIX, gtimg.com
+DOMAIN-SUFFIX, gtimg.cn
+DOMAIN-SUFFIX, wechatpay.cn
+
+# 微信小程序核心
+DOMAIN-SUFFIX, servicewechat.com
+
+# 腾讯视频号相关（如果你常看视频号）
+DOMAIN-SUFFIX, video.qq.com
+
