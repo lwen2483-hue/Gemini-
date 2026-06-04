@@ -4,9 +4,8 @@
 
 [Rule]
 # ===== 0. 强制优先级（最高，必须放在最前） =====
-DOMAIN-SUFFIX,sentry.io, REJECT
+DOMAIN-SUFFIX,sentry.io,REJECT
 DOMAIN-SUFFIX,weixin.qq.com,DIRECT
-DOMAIN-SUFFIX,douyinvod.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
 DOMAIN,js.appds.vip,漏网之鱼
 
