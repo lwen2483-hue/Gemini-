@@ -4,6 +4,7 @@
 
 [Rule]
 # ===== 0. 强制优先级（最高，必须放在最前） =====
+DOMAIN-SUFFIX,sentry.io, REJECT
 DOMAIN-SUFFIX,weixin.qq.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
@@ -19,6 +20,7 @@ DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,mesu.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
+
 
 # ===== 2.1. 苹果服务强制直连（解决 iCloud DNS 解析超时） =====
 DOMAIN-SUFFIX,apple.com,DIRECT
