@@ -2,6 +2,7 @@
 # 1. 精准域名匹配
 DOMAIN,signaler-pa.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,gemini.google.com
 DOMAIN,gemini.apps.google.com
 DOMAIN,bard.google.com
