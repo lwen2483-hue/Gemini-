@@ -1,18 +1,26 @@
-# === Gemini 补充增强 ===
+# === Gemini 补充增强（完全体） ===
+# 1. 精准域名匹配
+DOMAIN,signaler-pa.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN,gemini.google.com
+DOMAIN,gemini.apps.google.com
 DOMAIN,bard.google.com
 DOMAIN,deepmind.com
 DOMAIN,deepmind.google
 DOMAIN,generativeai.google
+DOMAIN,ai.google
 DOMAIN,ai.google.dev
 DOMAIN,makersuite.google.com
+DOMAIN,lh3.googleusercontent.com
+DOMAIN,lh4.googleusercontent.com
+DOMAIN,lh5.googleusercontent.com
+DOMAIN,lh6.googleusercontent.com
 
+# 2. 域名后缀匹配
+DOMAIN-SUFFIX,apis.google.com
+
+# 3. 域名关键词模糊匹配
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,alkalimaven-pa
-
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
-# 专门用于 Gemini 实时信令和语音连接
-DOMAIN,signaler-pa.googleapis.com
