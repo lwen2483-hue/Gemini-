@@ -16,6 +16,3 @@ DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
 # 专门用于 Gemini 实时信令和语音连接
 DOMAIN,signaler-pa.googleapis.com
-
-# 顺便把 Gemini 专用的底层 API 也独立出来（如果有的话）
-DOMAIN-KEYWORD,generativelanguage
