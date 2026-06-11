@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,sentry.io,REJECT
 DOMAIN-SUFFIX,weixin.qq.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
 DOMAIN,js.appds.vip,漏网之鱼
+DOMAIN,app-analytics-services.com,REJECT
 
 # ===== 1. 核心本地/审计与阻断（高优先级） =====
 IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
