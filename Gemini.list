@@ -22,11 +22,6 @@ DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com
 DOMAIN-SUFFIX,fundingchoicesmessages.google.com
 
-# 如果你怕前面抓包漏掉，可以用精确域名（DOMAIN）把那两个专门的 API 补上：
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN,signaler-pa.googleapis.com
-
-
 # 3. 域名关键词模糊匹配
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
