@@ -4,6 +4,7 @@
 
 [Rule]
 # ===== 0. 强制优先级（最高，必须放在最前） =====
+IP-CIDR,18.141.233.217/32,DIRECT,no-resolve
 DOMAIN-SUFFIX,sentry.io,REJECT
 DOMAIN-SUFFIX,weixin.qq.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
